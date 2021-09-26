@@ -1,0 +1,12 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap&subset=cyrillic-ext');
+/*font-family:  'Montserrat', sans-serif;
+ */
+
+@import "_reset.css";
+@import "_body.css";
+@import "components/_header.css";
+@import "components/_main.css";
+@import "components/_statistics.css";
+
+
+
