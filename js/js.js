@@ -12,6 +12,6 @@ for (let i = 0; i < coll.length; i++) {
     })
 }
 
-console.log(coll.style);
+console.log(coll.style)
 
 
