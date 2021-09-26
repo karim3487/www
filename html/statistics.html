@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap"
           rel="stylesheet">
+
 </head>
 <body id="top">
 <header class="header">
@@ -132,6 +133,10 @@
                 </tr>
             </table>
         </div>
+        <div class="graph">
+            <canvas id="myChart"></canvas>
+        </div>
+        <p class="end">.</p>
     </div>
     <a href="#top" title="Вернуться вверх" class="buttonup">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -150,8 +155,26 @@
     </a>
 </main>
 <script src="../js/js.js"></script>
-<!--<script src="../js/lightbox-plus-jquery.js"></script>-->
-
-
+<script src="../js/lightbox-plus-jquery.js"></script>
+<!--<script src="../js/chart.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['C', 'Python', 'Java', 'C++', 'C#', 'VisualBasic', 'JavaScript', 'PHP', 'R', 'SQL'],
+            datasets: [{
+                label: 'Самые популярные языки программирования',
+                backgroundColor: 'rgb(250,145,12)',
+                borderColor: 'rgb(50,145,12)',
+                data: [16.21, 12.12, 11.68, 7.60, 4.67, 4.01, 2.03, 1.79, 1.64, 1.54]
+            }]
+        },
+        options: {
+            borderRadius: 5,
+        }
+    });
+</script>
 </body>
 </html>

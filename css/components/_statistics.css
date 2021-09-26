@@ -30,21 +30,19 @@ td {
 }
 
 .collapsible {
-    /*background-color: #cccccc;*/
+    transition: max-height 0.2s ease-out;
     cursor: pointer;
     padding: 18px 30px;
     border: none;
     text-align: left;
-    width: 100%;
     outline: none;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .collapsible:hover {
     transition: 0.8s;
-
+    background-color: #ababab;
 }
 
 .collapsible:active {
@@ -58,5 +56,17 @@ td {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-bottom: 56px;
+}
+
+.graph {
+    border-collapse: separate;
+    border: 21px solid #ababab;
+border-radius: 15px;
+    margin-bottom: 46px;
+}
+
+.end {
+    color: #DAD8D8;
 }
 
