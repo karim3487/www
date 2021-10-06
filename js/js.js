@@ -4,7 +4,7 @@ for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener('click', function() {
         this.classList.toggle('active');
         let content = this.nextElementSibling;
-        console.log(content);
+        // console.log(content);
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
             block.style.backgroundColor = '#cccccc';
@@ -20,5 +20,8 @@ for (let i = 0; i < coll.length; i++) {
     })
 }
 
+console.log(block);
+console.log(coll);
 
 
+// использовать только query selector

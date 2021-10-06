@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap"
           rel="stylesheet">
-
+    <link rel="icon" href="../image/icon.svg">
 </head>
 <body id="top">
 <header class="header">
     <div class="wrapper">
         <div class="header__wrapper">
             <div class="header__logo">
-                <a href="#" class="header__logo-link">
+                <a href="../" class="header__logo-link">
                     <img src="../image/logo.svg" alt="Home">
                 </a>
             </div>
@@ -29,114 +29,119 @@
                         <a href="statistics.html" class="header__link">Статистика</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Заметки</a>
+                        <a href="notes.html" class="header__link">Заметки</a>
                     </li>
                 </ul>
             </nav>
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
 
 <main class="main">
-    <div class="wrapper">
-        <h1 class="heading">Самые популярные языки программирования. Хабратоп 2020 года</h1>
-        <button class="collapsible" style="background-color: #cccccc">Показать таблицу</button>
-        <div class="content">
-            <table class="table__content">
-                <tr>
-                    <th>2020</th>
-                    <th>2019</th>
-                    <th>Статус</th>
-                    <th>Язык программирования</th>
-                    <th>Рейтинг</th>
-                    <th>Изменение</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td><img src="../image/status/up.svg" alt="up"></td>
-                    <td>С</td>
-                    <td>16.21%</td>
-                    <td>+0.17%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><img src="../image/status/up.svg" alt="up"></td>
-                    <td>Python</td>
-                    <td>12.12%</td>
-                    <td>+2.27%</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>1</td>
-                    <td><img src="../image/status/down.svg" alt="down"></td>
-                    <td>Java</td>
-                    <td>11.68%</td>
-                    <td>-4.57%</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>3</td>
-                    <td></td>
-                    <td>C++</td>
-                    <td>7.60%</td>
-                    <td>+1.99%</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>5</td>
-                    <td></td>
-                    <td>C#</td>
-                    <td>4.67%</td>
-                    <td>+0.36%</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>6</td>
-                    <td></td>
-                    <td>Visual Basic</td>
-                    <td>4.01%</td>
-                    <td>-0.22%</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>7</td>
-                    <td></td>
-                    <td>JavaScript</td>
-                    <td>2.03%</td>
-                    <td>+0.10%</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>8</td>
-                    <td></td>
-                    <td>PHP</td>
-                    <td>1.79%</td>
-                    <td>+0.07%</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>16</td>
-                    <td><img src="../image/status/up_up.svg" alt="up_up"></td>
-                    <td>R</td>
-                    <td>1.64%</td>
-                    <td>+0.66%</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>9</td>
-                    <td><img src="../image/status/down.svg" alt="down"></td>
-                    <td>SQL</td>
-                    <td>1.54%</td>
-                    <td>-0.15%</td>
-                </tr>
-            </table>
-        </div>
-        <div class="graph">
-            <canvas id="myChart"></canvas>
-        </div>
-        <p class="end">.</p>
+    <div class="container">
+        <div class="container">
+            <h1 class="heading">Самые популярные языки программирования. Хабратоп 2020 года</h1>
+            <button class="collapsible" style="background-color: #cccccc">Показать таблицу</button>
+            <div class="content">
+                <table class="table__content">
+                    <tr>
+                        <th>2020</th>
+                        <th>2019</th>
+                        <th>Статус</th>
+                        <th>Язык программирования</th>
+                        <th>Рейтинг</th>
+                        <th>Изменение</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td><img src="../image/status/up.svg" alt="up"></td>
+                        <td>С</td>
+                        <td>16.21%</td>
+                        <td>+0.17%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td><img src="../image/status/up.svg" alt="up"></td>
+                        <td>Python</td>
+                        <td>12.12%</td>
+                        <td>+2.27%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                        <td><img src="../image/status/down.svg" alt="down"></td>
+                        <td>Java</td>
+                        <td>11.68%</td>
+                        <td>-4.57%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>3</td>
+                        <td></td>
+                        <td>C++</td>
+                        <td>7.60%</td>
+                        <td>+1.99%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                        <td></td>
+                        <td>C#</td>
+                        <td>4.67%</td>
+                        <td>+0.36%</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>Visual Basic</td>
+                        <td>4.01%</td>
+                        <td>-0.22%</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>7</td>
+                        <td></td>
+                        <td>JavaScript</td>
+                        <td>2.03%</td>
+                        <td>+0.10%</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td></td>
+                        <td>PHP</td>
+                        <td>1.79%</td>
+                        <td>+0.07%</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>16</td>
+                        <td><img src="../image/status/up_up.svg" alt="up_up"></td>
+                        <td>R</td>
+                        <td>1.64%</td>
+                        <td>+0.66%</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>9</td>
+                        <td><img src="../image/status/down.svg" alt="down"></td>
+                        <td>SQL</td>
+                        <td>1.54%</td>
+                        <td>-0.15%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+            <p class="end">.</p>        </div>
+
     </div>
     <a href="#top" title="Вернуться вверх" class="buttonup">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -166,7 +171,7 @@
             labels: ['C', 'Python', 'Java', 'C++', 'C#', 'VisualBasic', 'JavaScript', 'PHP', 'R', 'SQL'],
             datasets: [{
                 label: 'Самые популярные языки программирования',
-                backgroundColor: 'rgb(250,145,12)',
+                backgroundColor: 'rgb(181,152,126)',
                 borderColor: 'rgb(50,145,12)',
                 data: [16.21, 12.12, 11.68, 7.60, 4.67, 4.01, 2.03, 1.79, 1.64, 1.54]
             }]

@@ -25,13 +25,6 @@ main .wrapper {
 
 }
 
-.contents {
-    display: grid;
-    grid-template-columns: 570px auto;
-    grid-column-gap: 20px;
-    /*padding-bottom: 56px;*/
-}
-
 .contents__content a {
     color: #868686;
     font-size: 15px;
@@ -43,26 +36,6 @@ main .wrapper {
 
 .contents__content a:hover, .header__link:focus, .header__link:active {
     color: #222222
-}
-
-.text h2 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
-    padding-bottom: 19px;
-    padding-top: 30px;
-    text-align: left;
-}
-
-.column__B {
-    padding-top: 30px;
-}
-
-.text {
-    text-align: justify;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 80px;
 }
 
 .text h3 {
@@ -82,14 +55,22 @@ main .wrapper {
 .image {
     overflow: hidden;
     position: relative;
+    display: block;
 }
 
-.image img {
+.text img {
     transition: 0.4s;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
     display: block;
+    /*max-width: 445px;*/
+    width: 100%;
+}
+
+.contents img {
+    max-width: 582px;
+    height: auto;
 }
 
 .image img:hover{
@@ -102,7 +83,6 @@ main .wrapper {
 .contents .image span {
     display: block;
     padding: 30px;
-    width: 570px;
     position: absolute;
     bottom: 0;
     background: #000;
@@ -116,9 +96,9 @@ main .wrapper {
 }
 
 .image span {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 25px;
-    width: 445px;
     position: absolute;
     bottom: 0;
     background: #000;
@@ -129,6 +109,7 @@ main .wrapper {
     text-align: center;
     color: #fff;
     font-size: 30px;
+    width: 100%;
 }
 
 

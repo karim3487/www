@@ -4,9 +4,11 @@
 
 @import "_reset.css";
 @import "_body.css";
+@import "media.css";
 @import "components/_header.css";
 @import "components/_main.css";
 @import "components/_statistics.css";
+@import "components/_notes.css";
 
 
 

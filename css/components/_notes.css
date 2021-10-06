@@ -1,0 +1,49 @@
+.row {
+    padding: 56px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    background-color: #e8cd7d;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.hr {
+    margin-left: 20px;
+    width: 40px;
+    /*height: 5px;*/
+    height:1px;
+    color:red;
+    background-color:red;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    align-items: start;
+}
+
+.second_text {
+    margin: 40px 20px;
+}
+
+h5 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
