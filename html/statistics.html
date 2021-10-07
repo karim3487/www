@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
     <title>Happy coder</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/lightbox.css">
@@ -41,127 +43,110 @@
 </header>
 
 <main class="main">
-    <div class="container">
-        <div class="container">
-            <h1 class="heading">Самые популярные языки программирования. Хабратоп 2020 года</h1>
-            <button class="collapsible" style="background-color: #cccccc">Показать таблицу</button>
-            <div class="content">
-                <table class="table__content">
-                    <tr>
-                        <th>2020</th>
-                        <th>2019</th>
-                        <th>Статус</th>
-                        <th>Язык программирования</th>
-                        <th>Рейтинг</th>
-                        <th>Изменение</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td><img src="../image/status/up.svg" alt="up"></td>
-                        <td>С</td>
-                        <td>16.21%</td>
-                        <td>+0.17%</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>3</td>
-                        <td><img src="../image/status/up.svg" alt="up"></td>
-                        <td>Python</td>
-                        <td>12.12%</td>
-                        <td>+2.27%</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>1</td>
-                        <td><img src="../image/status/down.svg" alt="down"></td>
-                        <td>Java</td>
-                        <td>11.68%</td>
-                        <td>-4.57%</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>3</td>
-                        <td></td>
-                        <td>C++</td>
-                        <td>7.60%</td>
-                        <td>+1.99%</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>5</td>
-                        <td></td>
-                        <td>C#</td>
-                        <td>4.67%</td>
-                        <td>+0.36%</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>6</td>
-                        <td></td>
-                        <td>Visual Basic</td>
-                        <td>4.01%</td>
-                        <td>-0.22%</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>7</td>
-                        <td></td>
-                        <td>JavaScript</td>
-                        <td>2.03%</td>
-                        <td>+0.10%</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>8</td>
-                        <td></td>
-                        <td>PHP</td>
-                        <td>1.79%</td>
-                        <td>+0.07%</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>16</td>
-                        <td><img src="../image/status/up_up.svg" alt="up_up"></td>
-                        <td>R</td>
-                        <td>1.64%</td>
-                        <td>+0.66%</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>9</td>
-                        <td><img src="../image/status/down.svg" alt="down"></td>
-                        <td>SQL</td>
-                        <td>1.54%</td>
-                        <td>-0.15%</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="graph">
-                <canvas id="myChart"></canvas>
-            </div>
-            <p class="end">.</p>        </div>
+    <div class="wrapper">
+        <h1 class="heading">Самые популярные языки программирования. Хабратоп 2020 года</h1>
+        <button class="collapsible" style="background-color: #cccccc">Показать таблицу</button>
+        <div class="content">
+            <table class="table__content">
+                <tr>
+                    <th>2020</th>
+                    <th>2019</th>
+                    <th>Статус</th>
+                    <th>Язык</th>
+                    <th>Рейтинг</th>
+                    <th>Изменение</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td><img src="../image/status/up.svg" alt="up"></td>
+                    <td>С</td>
+                    <td>16.21%</td>
+                    <td>+0.17%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td><img src="../image/status/up.svg" alt="up"></td>
+                    <td>Python</td>
+                    <td>12.12%</td>
+                    <td>+2.27%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td><img src="../image/status/down.svg" alt="down"></td>
+                    <td>Java</td>
+                    <td>11.68%</td>
+                    <td>-4.57%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                    <td></td>
+                    <td>C++</td>
+                    <td>7.60%</td>
+                    <td>+1.99%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td></td>
+                    <td>C#</td>
+                    <td>4.67%</td>
+                    <td>+0.36%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>6</td>
+                    <td></td>
+                    <td>Visual Basic</td>
+                    <td>4.01%</td>
+                    <td>-0.22%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>7</td>
+                    <td></td>
+                    <td>JavaScript</td>
+                    <td>2.03%</td>
+                    <td>+0.10%</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8</td>
+                    <td></td>
+                    <td>PHP</td>
+                    <td>1.79%</td>
+                    <td>+0.07%</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>16</td>
+                    <td><img src="../image/status/up_up.svg" alt="up_up"></td>
+                    <td>R</td>
+                    <td>1.64%</td>
+                    <td>+0.66%</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>9</td>
+                    <td><img src="../image/status/down.svg" alt="down"></td>
+                    <td>SQL</td>
+                    <td>1.54%</td>
+                    <td>-0.15%</td>
+                </tr>
+            </table>
+        </div>
 
+        <div class="graph">
+            <canvas id="myChart"></canvas>
+        </div>
+        <p class="end">.</p>
     </div>
-    <a href="#top" title="Вернуться вверх" class="buttonup">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             width="50" height="50"
-             viewBox="0 0 172 172"
-             style=" fill:#000000;">
-            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-               font-family="none" font-weight="normal" font-size="none" style="mix-blend-mode: normal">
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#ffffff">
-                    <path d="M86,24.8325l-4.8375,4.945l-34.0775,33.97c-2.70094,2.70094 -2.70094,7.08156 0,9.7825c2.70094,2.70094 7.08156,2.70094 9.7825,0l22.2525,-22.36v86.43c-0.04031,2.48594 1.26313,4.78375 3.41313,6.03344c2.13656,1.26313 4.79719,1.26313 6.93375,0c2.15,-1.24969 3.45344,-3.5475 3.41312,-6.03344v-86.43l22.2525,22.36c2.70094,2.70094 7.08156,2.70094 9.7825,0c2.70094,-2.70094 2.70094,-7.08156 0,-9.7825l-34.0775,-33.97z"></path>
-                </g>
-            </g>
-        </svg>
-    </a>
 </main>
 <script src="../js/js.js"></script>
 <script src="../js/lightbox-plus-jquery.js"></script>
-<!--<script src="../js/chart.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     var ctx = document.getElementById('myChart').getContext('2d');

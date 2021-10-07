@@ -1,4 +1,5 @@
 main {
+    padding-top: 70px;
     max-width: 1170px;
     margin: 0 auto;
     background-color: #DAD8D8;
@@ -6,9 +7,10 @@ main {
 
 main .wrapper {
     max-width: 970px;
+    margin: 0 auto;
 }
 
-.main h3 {
+.text h3 {
     font-weight: 600;
     font-size: 19px;
     line-height: 141.4%;
@@ -23,15 +25,6 @@ main .wrapper {
     padding-bottom: 30px;
     padding-top: 30px;
 
-}
-
-.contents__content a {
-    color: #868686;
-    font-size: 15px;
-    text-decoration-line: none;
-    border-bottom: 1px dashed #868686;
-    line-height: 170%;
-    margin-left: 10px;
 }
 
 .contents__content a:hover, .header__link:focus, .header__link:active {
@@ -56,6 +49,8 @@ main .wrapper {
     overflow: hidden;
     position: relative;
     display: block;
+    width: 100%;
+
 }
 
 .text img {
@@ -64,13 +59,14 @@ main .wrapper {
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
     display: block;
-    /*max-width: 445px;*/
     width: 100%;
+
 }
 
 .contents img {
-    max-width: 582px;
+    /*max-width: 582px;*/
     height: auto;
+    width: 100%;
 }
 
 .image img:hover{
@@ -80,37 +76,9 @@ main .wrapper {
     -o-transform: scale(1.1);
 }
 
-.contents .image span {
-    display: block;
-    padding: 30px;
-    position: absolute;
-    bottom: 0;
-    background: #000;
-    opacity: 0.90;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
-    -khtml-opacity: 0.70;
-    -moz-opacity: 0.70;
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-}
 
-.image span {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 25px;
-    position: absolute;
-    bottom: 0;
-    background: #000;
-    opacity: 0.90;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
-    -khtml-opacity: 0.70;
-    -moz-opacity: 0.70;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    width: 100%;
-}
+
+
 
 
 

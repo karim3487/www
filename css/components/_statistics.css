@@ -15,22 +15,6 @@ td img {
     height: 20px;
 }
 
-th {
-    padding: 10px;
-    /*border: #746301 5px solid;*/
-    font-weight: bold;
-    font-size: 16px;
-    /*text-align: center;*/
-    /*justify-items: center;*/
-}
-
-
-td {
-    font-weight: normal;
-    padding: 10px;
-    background-color: #DAD8D8;
-}
-
 .collapsible {
     /*transition: max-height 0.2s ease-out;*/
     cursor: pointer;
