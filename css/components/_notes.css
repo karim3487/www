@@ -1,49 +1,58 @@
-.row {
-    padding: 56px 0;
-    align-items: center;
+.wrapper__notes {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.note {
+    height: 300px;
+    width: 200px;
+    background-color: #ffe69c;
+    border-radius: .8rem;
+    margin: .75rem;
+    cursor: grab;
+    text-align: center;
+}
+
+.note:first-child {
+    background-color: #f1aeb5;
+}
+
+.dragItem:active {
+    opacity: .5;
+}
+
+.note__content {
+    width: 100%;
+    padding: .5rem;
+    text-align: justify;
+    position: relative;
+    user-select: none;
     justify-content: center;
 }
 
-.card {
-    text-align: center;
-    padding: 30px;
-    background-color: #e8cd7d;
-    margin-right: 30px;
-    border-radius: 15px;
+.h5 {
+
 }
 
-.card:last-child {
-    margin-right: 0;
+.note_hidden {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
 }
 
-.card p {
-    text-align: justify;
+.note_hidden>.note__content {
+    display: none;
 }
 
-.hr {
-    margin-left: 20px;
-    width: 40px;
-    /*height: 5px;*/
-    height:1px;
-    color:red;
-    background-color:red;
+.icon img {
+    max-width: 100px;
+    user-select: none;
 }
 
-.icon {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    align-items: start;
-}
-
-.second_text {
-    margin: 40px 20px;
-}
-
-h5 {
-    padding-bottom: 20px;
-    padding-top: 20px;
+.main_text {
+    padding: 10px 0;
     font-size: 25px;
     font-weight: 700;
+    user-select: none;
 }
