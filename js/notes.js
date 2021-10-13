@@ -66,8 +66,14 @@ function handlerDrop(event) {
             if (draggedIndex > droppedIndex) {
                 draggedItem.parentElement.insertBefore(draggedItem, droppedItem)
             } else {
-                draggedItem.parentElement.insertBefore(draggedItem, droppedItem.nextElementSibling)
+                draggedItem.parentElement.insertBefore(
+                    draggedItem,
+                    droppedItem.nextElementSibling
+                );
             }
+        }
+        else {
+            this.insertBefore(draggedItem,droppedItem);
         }
     } else {
         this.append(draggedItem);

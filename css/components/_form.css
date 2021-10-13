@@ -1,0 +1,13 @@
+.form__wrapper h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.form__wrapper h3 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 130%;
+    padding-bottom: 4px;
+}

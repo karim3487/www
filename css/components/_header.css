@@ -9,6 +9,8 @@
     width: 100%;
     position: fixed;
     z-index: 50;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .header__wrapper {

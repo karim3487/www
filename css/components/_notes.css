@@ -32,8 +32,15 @@
     justify-content: center;
 }
 
-.h5 {
+tr {
+    transition: all 0.5s ease;
+}
 
+tr:hover {
+    color: #000;
+    border-color: #bacbe6;
+    background-color: #bfd1ec;
+    transition: all 0.3s ease;
 }
 
 .note_hidden {

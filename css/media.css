@@ -1,12 +1,12 @@
 @media screen and (max-width: 3000px) {
     .header__list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: end;
     }
 
     .header__list li {
-        margin-left: 112px;
+        margin-left: 92px;
     }
 
     .head {
