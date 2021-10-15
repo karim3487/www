@@ -1,13 +1,67 @@
-.form__wrapper h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 44px;
-}
-
-.form__wrapper h3 {
-    font-weight: 600;
-    font-size: 19px;
+.form__wrapper p {
+    font-weight: 500;
+    font-size: 17px;
     line-height: 130%;
     padding-bottom: 4px;
 }
+
+.form__wrapper span {
+    color: #868686;
+    font-size: 17px;
+}
+
+
+
+input ,
+select,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #f8f8f8;
+    box-shadow: inset 0 3px 5px rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    line-height: 30px;
+    height: 50px;
+}
+
+textarea {
+    resize: none;
+    height: 20vh;
+}
+
+.form__button {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 10px 20px 30px 0;
+    color: white;
+    background-color: #409aa2;
+    box-shadow: 5px 7px 6px rgb(199, 199, 199);
+    transition: 0.3s;
+}
+
+.form__button:hover,
+input[type=file]::file-selector-button:hover {
+    transition: 0.3s;
+    background-color: #50c4ce;
+}
+
+input[type=file]::file-selector-button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    background-color: #409aa2;
+    box-shadow: 0 3px 3px rgb(199, 199, 199);
+    transition: 0.3s;
+}
+
