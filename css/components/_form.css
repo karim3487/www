@@ -65,3 +65,8 @@ input[type=file]::file-selector-button {
     transition: 0.3s;
 }
 
+input:invalid {
+    border: solid #f1aeb5 2px;
+    box-shadow: 0 0 0;
+}
+

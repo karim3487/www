@@ -16,15 +16,13 @@ function load($data): array
 function validate($data): string
 {
     $errors = '';
-    foreach ($data as $k => $v) {
-        if ($v['required'] && empty($v['value'])) {
-            $errors .= "<li>Вы не заполнили поле {$data[$k]['fields_name']}</li>";
-        }
-    }
+//    foreach ($data as $k => $v) {
+//        if (empty($v['value'])) {
+//            $errors .= "<li>Вы не заполнили поле {$v['fields_name']}</li>";
+//        }
+//    }
     if ($data['password']['value'] !== $data['secondpassword']['value'])
         $errors .= "<li>Пароли не совпадают!</li>";
-    if ($data['reputation']['value'] < 1 || $data['reputation']['value'] > 10)
-        $errors .= "<li>Репутация должна быть в диапазоне от 1 до 10</li>";
     return $errors;
 }
 

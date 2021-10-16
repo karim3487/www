@@ -1,5 +1,4 @@
-<?php
-?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -52,11 +51,11 @@
                 <div class="short__input">
                     <label for="surname">
                         <p>Фамилия:</p>
-                        <input type="text" placeholder="Введите фамилию" name="surname" minlength="1" maxlength="12"><!--required-->
+                        <input type="text" placeholder="Введите фамилию" name="surname" minlength="1" maxlength="12" required>
                     </label>
                     <label for="name">
                         <p>Имя:</p>
-                        <input type="text" placeholder="Введите имя" name="name" minlength="1" maxlength="12"><!--required-->
+                        <input type="text" placeholder="Введите имя" name="name" minlength="1" maxlength="12" required>
                     </label>
                     <label for="patronymic">
                         <p>Отчество <span>(необязательно)</span>:</p>
@@ -64,37 +63,37 @@
                     </label>
                     <label for="email">
                         <p>Email:</p>
-                        <input type="email" placeholder="example@mail.ru" name="email" ><!--required-->
+                        <input type="email" placeholder="example@mail.ru" name="email" required>
                     </label>
                     <label for="password">
                         <p>Пароль:</p>
-                        <input type="password" name="password" minlength="8" maxlength="12" placeholder="Введите пароль" ><!--required-->
+                        <input type="password" name="password" minlength="8" maxlength="12" placeholder="Введите пароль" required>
                     </label>
                     <label for="secondpassword">
                         <p>Повторите пароль:</p>
-                        <input type="password" name="secondpassword" minlength="8" maxlength="12" placeholder="Подтвердите пароль" ><!--required-->
+                        <input type="password" name="secondpassword" minlength="8" maxlength="12" placeholder="Подтвердите пароль" required>
                     </label>
                     <label for="role">
                         <p>Роль пользователя:</p>
-                        <select name="role" id="#role" ><!--required-->
-                            <option value="">Выберите роль</option>
+                        <select name="role" id="#role" required>
+                            <option>Выберите роль</option>
                             <option value="admin">Администратор</option>
                             <option value="user">Пользователь</option>
                         </select>
                     </label>
                     <label for="reputation">
                         <p>Репутация пользователя:</p>
-                        <input type="number" name="reputation" placeholder="от 1 до 10"><!--required-->
+                        <input type="number" name="reputation" placeholder="от 1 до 10" min="1" max="10" required>
                     </label>
                     <label for="date">
                         <p>Дата регистрации:</p>
-                        <input type="date" name="date" ><!--required-->
+                        <input type="date" name="date" required>
                     </label>
                 </div>
                 <hr>
                 <label for="image" class="choice__img">
                     <p>Выберите аватар <span>(до 1Мб, *.png, *.jpeg)</span>:</p>
-                    <input type="file" name="img" placeholder="До 1Мб">
+                    <input type="file" name="img" placeholder="До 1Мб" accept="image/jpeg, image/png">
                 </label>
                 <label for="about">
                     <p>О себе <span>(Необязательно)</span>:</p>

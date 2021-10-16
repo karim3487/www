@@ -11,5 +11,30 @@
 @import "components/_notes.css";
 @import "components/_form.css";
 
+/* для файла create.php */
+
+.files img {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.files {
+    text-align: center;
+}
+
+.files a {
+    font-size: 25px;
+    color: black;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    transition: .5s;
+}
+
+.files a:hover {
+    transition: .5s;
+    color: darkgrey;
+}
+
+
 
 
