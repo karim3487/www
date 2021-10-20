@@ -106,5 +106,6 @@
         </div>
     </div>
 </main>
+<script src="../js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
