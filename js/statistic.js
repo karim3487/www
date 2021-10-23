@@ -24,4 +24,3 @@ console.log(block);
 console.log(coll);
 
 
-// использовать только query selector

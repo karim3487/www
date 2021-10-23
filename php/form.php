@@ -47,7 +47,7 @@
     <div class="wrapper">
         <div class="form__wrapper">
             <h1 class="heading">Регистрация нового пользователя</h1>
-            <form class="contact-form" action="create.php" method="post" name="contact-form" enctype="multipart/form-data">
+            <form id="form" class="contact-form" action="create.php" method="post" name="contact-form" enctype="multipart/form-data">
                 <div class="short__input">
                     <label for="surname">
                         <p>Фамилия:</p>
@@ -67,11 +67,12 @@
                     </label>
                     <label for="password">
                         <p>Пароль:</p>
-                        <input type="password" name="password" minlength="8" maxlength="12" placeholder="Введите пароль" required>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="12" placeholder="Введите пароль" required>
                     </label>
-                    <label for="secondpassword">
+                    <label for="secondpassword" id="passwordInput">
                         <p>Повторите пароль:</p>
-                        <input type="password" name="secondpassword" minlength="8" maxlength="12" placeholder="Подтвердите пароль" required>
+                        <input type="password" name="secondpassword" id="secondpassword" minlength="8" maxlength="12" placeholder="Подтвердите пароль" required>
+<!--                        <p id="invalidPassword"></p>-->
                     </label>
                     <label for="role">
                         <p>Роль пользователя:</p>
@@ -100,12 +101,13 @@
                     <textarea name="about" id="about" placeholder="Расскажите о себе..."></textarea>
                 </label>
                 <hr>
-                <button type="submit" class="form__button">Отправить</button>
+                <button type="button" onclick="validatePassword()" class="form__button">Отправить</button>
                 <button type="reset" class="form__button">Очистить форму</button>
             </form>
         </div>
     </div>
 </main>
 <script src="../js/lightbox-plus-jquery.js"></script>
+<script src="../js/validPassword.js"></script>
 </body>
 </html>

@@ -36,43 +36,33 @@ $imgName = time() . ".$extension";
 $fields = [
     'surname' => [
         'fields_name' => 'Фамилия',
-//        'required' => 1,
     ],
     'name' => [
         'fields_name' => 'Имя',
-//        'required' => 1,
     ],
     'patronymic' => [
         'fields_name' => 'Отчество',
-//        'required' => 0,
     ],
     'email' => [
         'fields_name' => 'Email',
-//        'required' => 1,
     ],
     'password' => [
         'fields_name' => 'Пароль',
-//        'required' => 1,
     ],
     'secondpassword' => [
         'fields_name' => 'Подтверждения пароля',
-//        'required' => 1,
     ],
     'role' => [
         'fields_name' => 'Роль',
-//        'required' => 1,
     ],
     'reputation' => [
         'fields_name' => 'Репутация',
-//        'required' => 1,
     ],
     'date' => [
         'fields_name' => 'Дата',
-//        'required' => 1,
     ],
     'about' => [
         'fields_name' => 'О себе',
-//        'required' => 0,
     ],
 ];
 
@@ -136,11 +126,6 @@ $fields = [
         <div class="files">
             <?php
             $fields = load($fields);
-            if ($errors = validate($fields)) {
-                echo '<h1 class="heading">Что-то пошло не так, мы получили следующие ошибки:</h1>';
-                debug($errors);
-            } else {
-
                 if (!is_dir('../users')) {
                     mkdir('../users', 0777, true);
                 }
@@ -157,7 +142,6 @@ $fields = [
                 echo '<h1 class="heading">Все прошло успешно!</h1>';
                 $url = "../users/$fileTxtName";
                 $txtFile = basename($url);
-            }
             ?>
             <div class="image">
                 <a href="<?= $urlIMG ?>" data-lightbox="image-5" data-title="">

@@ -10,8 +10,6 @@
     font-size: 17px;
 }
 
-
-
 input ,
 select,
 textarea {
@@ -70,3 +68,7 @@ input:invalid {
     box-shadow: 0 0 0;
 }
 
+.invalidPass {
+    color: crimson;
+    transition: 1s;
+}

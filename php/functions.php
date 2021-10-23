@@ -13,19 +13,6 @@ function load($data): array
     return $data;
 }
 
-function validate($data): string
-{
-    $errors = '';
-//    foreach ($data as $k => $v) {
-//        if (empty($v['value'])) {
-//            $errors .= "<li>Вы не заполнили поле {$v['fields_name']}</li>";
-//        }
-//    }
-    if ($data['password']['value'] !== $data['secondpassword']['value'])
-        $errors .= "<li>Пароли не совпадают!</li>";
-    return $errors;
-}
-
 function loadText ($data): string
 {
     $str = "";
