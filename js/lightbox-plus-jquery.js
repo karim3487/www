@@ -15,13 +15,14 @@
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
+
 	anchor.addEventListener("click", function(event) {
 		event.preventDefault();
 		const blockID = anchor.getAttribute('href')
-		document.querySelector('' + blockID).scrollIntoView({
-			behavior: "smooth",
-			block: "start"
-		})
+		const yOffset = -70;
+		const element = document.querySelector('' + blockID);//document.getElementById(blockID);
+		const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+		window.scrollTo({top: y, behavior: 'smooth'});
 	})
 }
 
