@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
           rel="stylesheet">
-    <link rel="icon" href="../image/icon.svg">
+    <link rel="icon" href="../image/icons/icon.svg">
 </head>
 <body id="top">
 <header class="header">
@@ -35,6 +34,9 @@
                     <li class="header__item">
                         <a href="#" class="header__link">Анкета</a>
                     </li>
+                    <li class="header__item">
+                        <a href="../external_api.html" class="header__link">Внешний&nbspAPI</a>
+                    </li>
                 </ul>
             </nav>
             <div class="menu-burger__header">
@@ -50,32 +52,32 @@
             <form id="form" class="contact-form" action="create.php" method="post" name="contact-form" enctype="multipart/form-data">
                 <div class="short__input">
                     <label for="surname">
-                        <p>Фамилия:</p>
+                        <p class="head_input">Фамилия<span class="req">*</span>:</p>
                         <input type="text" placeholder="Введите фамилию" name="surname" minlength="1" maxlength="12" required>
                     </label>
                     <label for="name">
-                        <p>Имя:</p>
+                        <p class="head_input">Имя<span class="req">*</span>:</p>
                         <input type="text" placeholder="Введите имя" name="name" minlength="1" maxlength="12" required>
                     </label>
                     <label for="patronymic">
-                        <p>Отчество <span>(необязательно)</span>:</p>
+                        <p class="head_input">Отчество <span class="notReq">(необязательно)</span>:</p>
                         <input type="text" placeholder="Введите отчество" name="patronymic" maxlength="12">
                     </label>
                     <label for="email">
-                        <p>Email:</p>
+                        <p class="head_input">Email<span class="req">*</span>:</p>
                         <input type="email" placeholder="example@mail.ru" name="email" required>
                     </label>
                     <label for="password">
-                        <p>Пароль:</p>
+                        <p class="head_input">Пароль<span class="req">*</span>:</p>
                         <input type="password" id="password" name="password" minlength="8" maxlength="12" placeholder="Введите пароль" required>
                     </label>
                     <label for="secondpassword" id="passwordInput">
-                        <p>Повторите пароль:</p>
+                        <p class="head_input">Повторите пароль<span class="req">*</span>:</p>
                         <input type="password" name="secondpassword" id="secondpassword" minlength="8" maxlength="12" placeholder="Подтвердите пароль" required>
-<!--                        <p id="invalidPassword"></p>-->
+                        <p  class="span"></p>
                     </label>
                     <label for="role">
-                        <p>Роль пользователя:</p>
+                        <p class="head_input">Роль пользователя<span class="req">*</span>:</p>
                         <select name="role" id="#role" required>
                             <option>Выберите роль</option>
                             <option value="admin">Администратор</option>
@@ -83,21 +85,21 @@
                         </select>
                     </label>
                     <label for="reputation">
-                        <p>Репутация пользователя:</p>
+                        <p class="head_input">Репутация пользователя<span class="req">*</span>:</p>
                         <input type="number" name="reputation" placeholder="от 1 до 10" min="1" max="10" required>
                     </label>
                     <label for="date">
-                        <p>Дата регистрации:</p>
+                        <p class="head_input">Дата регистрации<span class="req">*</span>:</p>
                         <input type="date" name="date" required>
                     </label>
                 </div>
                 <hr>
                 <label for="image" class="choice__img">
-                    <p>Выберите аватар <span>(до 1Мб, *.png, *.jpeg)</span>:</p>
+                    <p class="head_input">Выберите аватар <span class="notReq">(до 1Мб, *.png, *.jpeg)</span>:</p>
                     <input type="file" name="img" placeholder="До 1Мб" accept="image/jpeg, image/png">
                 </label>
                 <label for="about">
-                    <p>О себе <span>(Необязательно)</span>:</p>
+                    <p class="head_input">О себе <span>(Необязательно)</span>:</p>
                     <textarea name="about" id="about" placeholder="Расскажите о себе..."></textarea>
                 </label>
                 <hr>

@@ -41,7 +41,6 @@ td img {
     padding: 0;
     max-height: 0;
     overflow: hidden;
-    /*transition: max-height 0.2s inherit;*/
     margin-bottom: 46px;
     -webkit-transition: all 1s cubic-bezier(.89, .11, .12, 1);
     -moz-transition: all 1s cubic-bezier(.89, .11, .12, 1);

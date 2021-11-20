@@ -23,3 +23,4 @@ function loadText ($data): string
     }
     return $str;
 }
+

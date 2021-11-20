@@ -66,32 +66,6 @@ $fields = [
     ],
 ];
 
-//if (!empty($_POST)) {
-//    $fields = load($fields);
-//    if ($errors = validate($fields)) {
-//        debug($errors);
-//    } else {
-//
-//        if (!is_dir('../users')) {
-//            mkdir('../users', 0777, true);
-//        }
-//        $str = loadText($fields);
-//        $fileTxtName = time() . '.txt';
-//        file_put_contents("../users/" . $fileTxtName, $str);
-//
-//        // загружаем файл и проверяем
-//        // если во премя загрузки файла произошла ошибка, возвращаем die()
-//        if (!move_uploaded_file($image["tmp_name"], "../uploads/" . $imgName)) {
-//            die('Ошибка загрузки');
-//        }
-//        echo '<img src="../uploads/' . $imgName . '">';
-//        echo 'OK';
-//        $url = "localhost:63342/pr1/users/$fileTxtName";
-//        echo $url;
-//        $txtFile = basename($url);
-//        echo '<a href="../users/' . $txtFile . '" download="">Скачать файл</a>';
-//    }
-//}
 ?>
 <!doctype html>
 <html lang="ru">
@@ -107,7 +81,7 @@ $fields = [
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
           rel="stylesheet">
-    <link rel="icon" href="../image/icon.svg">
+    <link rel="icon" href="../image/icons/icon.svg">
 </head>
 <body>
 <header class="header">
