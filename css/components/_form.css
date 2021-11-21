@@ -41,7 +41,7 @@ textarea {
 }
 
 .head_input {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .form__button {
@@ -61,6 +61,10 @@ textarea {
 input[type=file]::file-selector-button:hover {
     transition: 0.3s;
     background-color: #50c4ce;
+}
+
+.api_btn {
+    margin-top: 20px;
 }
 
 input[type=file]::file-selector-button {
@@ -84,6 +88,10 @@ input[type=file]::file-selector-button {
 .req {
     color: crimson;
     transition: 0.3s;
+}
+
+#myChart {
+    margin-top: 100px;
 }
 
 /* для файла create.php */
