@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded',
 
         function scrollTo() {
             $('html, body').animate({
-                scrollTop: $(ctx).offset().top
+                scrollTop: $(ctx).offset().top -70
             }, {
                 duration: 1200,   // по умолчанию «400»
                 easing: "linear" // по умолчанию «swing»
