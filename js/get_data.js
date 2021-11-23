@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded',
                 $.post("https://sedelkin.ru/api/history/get_data", params).done(
                     function (data) {
                         let labels = [];
-                        let dateForChart = [];
+                        let dataForChart = [];
                         let label;
                         // если получили данные (может быть такое, что человек указал
                         // такие значения, что данные с сервера не пришли)
@@ -98,10 +98,10 @@ document.addEventListener('DOMContentLoaded',
                             // значения из данных пришедшими POST запросом
                             for (let index = 0; index < data['data'].length; index++) {
                                 labels.push(data['data'][index]['datetime']);
-                                dateForChart.push(data['data'][index]['close']);
+                                dataForChart.push(data['data'][index]['close']);
                             }
                             label = data['secid'];
-                            updateConfigByMutating(label, labels, dateForChart); // обновляем график
+                            updateConfigByMutating(label, labels, dataForChart); // обновляем график
                             scrollTo(); // скролим до графика
                         } else {
                             alert("По вашему запросу ничего не нашлось")
