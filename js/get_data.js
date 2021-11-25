@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () { // функция в
             $('html, body').animate({
                 scrollTop: $(ctx).offset().top -70
             }, {
-                duration: 1200,   // по умолчанию «400»
+                duration: 400,   // по умолчанию «400»
                 easing: "linear" // по умолчанию «swing»
             });
             return false;
