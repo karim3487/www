@@ -9,30 +9,27 @@ const date = document.querySelector('#date');                       // полу�
 date.valueAsDate = new Date();
 
 // request, чтобы получить security_list
-$.get('https://sedelkin.ru/api/security_list',
-    // функция в которую передаем js-объект
-    function (data) {
-        const items = Object.values(data['data']);               // items равен массиву data
-        // перебираем каждый элемент массива как item
-        for (let item in items) {
-            let opt = document.createElement('option'); // создаем HTML-элемент <option>
-            opt.value = items[item]['secid'];                    // присваиваем этому option'у значение под ключом secid
-            opt.textContent = items[item]['title'];              // добавляем этому option'у текст под ключом title
-            company.appendChild(opt);                            // добавляем option нашему select'у с id company_name
-        }
-    });
+$.get('https://sedelkin.ru/api/security_list').done(function (data) {
+    const items = Object.values(data['data']);               // items равен массиву data
+    // перебираем каждый элемент массива как item
+    for (let item in items) {
+        let opt = document.createElement('option'); // создаем HTML-элемент <option>
+        opt.value = items[item]['secid'];                    // присваиваем этому option'у значение под ключом secid
+        opt.textContent = items[item]['title'];              // добавляем этому option'у текст под ключом title
+        company.appendChild(opt);                            // добавляем option нашему select'у с id company_name
+    }
+});
 
 // АНАЛОГИЧНО
-$.get('https://sedelkin.ru/api/interval',
-    function (data) {
-        const items = Object.values(data['data']);
-        for (let tt in items) {
-            let opt = document.createElement('option');
-            opt.value = items[tt]['value'];
-            opt.textContent = items[tt]['title'];
-            interval.appendChild(opt);
-        }
-    });
+$.get('https://sedelkin.ru/api/interval').done(function (data) {
+    const items = Object.values(data['data']);
+    for (let tt in items) {
+        let opt = document.createElement('option');
+        opt.value = items[tt]['value'];
+        opt.textContent = items[tt]['title'];
+        interval.appendChild(opt);
+    }
+});
 
 const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
@@ -64,8 +61,7 @@ const myChart = new Chart(ctx, {
 });
 
 // проверка: Загружен ли документ
-document.addEventListener('DOMContentLoaded',
-    function () {                                                 // функция в которую передаем js-объект
+document.addEventListener('DOMContentLoaded', function () { // функция в которую передаем js-объект
         const form = document.getElementById('form');           // нашли нашу форму в HTML-документе
         form.addEventListener('submit', formSend);                  // запрещаем отправлять форму пока не выполнится функция formSend
 
@@ -92,8 +88,9 @@ document.addEventListener('DOMContentLoaded',
                         let dataForChart = [];
                         let label;
                         // если получили данные (может быть такое, что человек указал
-                        // такие значения, что данные с сервера не пришли)
-                        if (data['data'].length !== 0) {
+                        // такие значения, что данные с сервера не пришли).
+                        // И если ключ 'status' запроса, который пришел не равен 'error'
+                        if (data['data'].length !== 0 && data['status'] !== 'Error') {
                             // цикл, в котором добавляем в наши массивы
                             // значения из данных пришедшими POST запросом
                             for (let index = 0; index < data['data'].length; index++) {
